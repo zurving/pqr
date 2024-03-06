@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>PQR</title>
+        <script src="/pqr/qr/r/script.js" type="text/javascript"></script>
+        <style>
+            .content{
+                width: 300px;
+                overflow-x: hidden;
+                margin: 0 auto;
+            }
+            body{
+                text-align: center;
+                color: white;
+                background-color: black;
+                font-size: 18pt;
+            }
+            input{
+                font-size: 12pt;
+            }
+        </style>
+    </head>
+    <body onload="generateDefaultQR()">
+        <div id="content" class="content">
+            <h2 style="text-align:center">Generate QR Code</h2>
+            <img id="qrcode" width="300px" height="300px" alt="generated qr code"/>
+                <p>Enter qrcode text here:</p>
+                <input type="text" id="input" placeholder="qr code text" autocomplete="false"/>
+                <input type="button" id="go" value="create qr" onclick="createCode()"/>
+        </div>
+    </body>
+</html>
